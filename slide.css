@@ -1,0 +1,114 @@
+:root {
+    font-size: 16px;
+    --gap: 2rem;
+    --card-width:  calc(100vw - 2 * var(--gap));
+    --card-height:  calc(100vh - 2 * var(--gap));    
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: georgia, serif;
+}
+
+.wrapper {
+    position: absolute;
+    left: calc(0.75 * var(--gap));
+    top: calc(0.75 * var(--gap));
+}
+
+.anchor {
+    display: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, var(--card-width));
+    grid-template-rows: repeat(3, var(--card-height));
+    grid-gap: calc(0.25 * var(--gap));
+    transition: 0.6s;
+}
+
+.card {
+    position: relative;
+    box-shadow: -5px 10px 20px 0 rgba(0, 0, 0, .2);
+}
+
+.next-btn {
+    position: absolute;
+    display: inline-block;
+    right: 30px;
+    bottom: 30px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .9);
+    color: #fff;
+    text-align: center;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+#anchor1:target ~ .grid {
+    transform: translate3d(0, 0, 0);
+}
+#anchor2:target ~ .grid {
+    transform: translate3d(calc(-1 * var(--card-width)), 0, 0);
+}
+#anchor3:target ~ .grid {
+    transform: translate3d(calc(-2 * var(--card-width)), 0, 0);
+}
+#anchor4:target ~ .grid {
+    transform: translate3d(0, calc(-1 * var(--card-height)), 0);
+}
+#anchor5:target ~ .grid {
+    transform: translate3d(calc(-1 * var(--card-width)), calc(-1 * var(--card-height)), 0);
+}
+#anchor6:target ~ .grid {
+    transform: translate3d(calc(-2 * var(--card-width)), calc(-1 * var(--card-height)), 0);
+}
+#anchor7:target ~ .grid {
+    transform: translate3d(0, calc(-2 * var(--card-height)), 0);
+}
+#anchor8:target ~ .grid {
+    transform: translate3d(calc(-1 * var(--card-width)), calc(-2 * var(--card-height)), 0);
+}
+#anchor9:target ~ .grid {
+    transform: translate3d(calc(-2 * var(--card-width)), calc(-2 * var(--card-height)), 0);
+}
+
+.num-1 {
+    background: #b03532;
+}
+
+.num-2 {
+    background: #33a8a5;
+}
+
+.num-3 {
+    background: #30997a;
+}
+
+.num-4 {
+    background: #6a478f;
+}
+
+.num-5 {
+    background: #da6f2b;
+}
+
+.num-6 {
+    background: #3d8bb1;
+}
+
+.num-7 {
+    background: #e03f3f;
+}
+
+.num-8 {
+    background: #59a627;
+}
+
+.num-9 {
+    background: #4464a1;
+}
