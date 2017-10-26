@@ -10,7 +10,24 @@
 </head>
 
 <body>
+    <!-- 用于菜单控制的checkbox -->
+    <input type="checkbox" class="anchor" id="menuAnchor">
+    <!-- 利用fixed的wrapper，实现缩放时始终居中 -->
+    <ul class="menu">
+        <label for="menuAnchor" class="menu-close-btn">×</label>
+        <p class="title">Contents:</p>
+        <li><a href="#anchor1" class="link">Today</a></li>
+        <li><a href="#anchor2" class="link">I'll Show U</a></li>
+        <li><a href="#anchor3" class="link">How To</a></li>
+        <li><a href="#anchor4" class="link">Save</a></li>
+        <li><a href="#anchor5" class="link">The</a></li>
+        <li><a href="#anchor6" class="link">Hostage</a></li>
+        <li><a href="#anchor7" class="link">Dong!</a></li>
+        <li><a href="#anchor8" class="link">Dong!!</a></li>
+        <li><a href="#anchor9" class="link">Dong!!!</a></li>
+    </ul>
     <div class="wrapper">
+        <!-- 用于grid定位的锚点 -->
         <div class="anchor" id="anchor1"></div>
         <div class="anchor" id="anchor2"></div>
         <div class="anchor" id="anchor3"></div>
@@ -20,43 +37,60 @@
         <div class="anchor" id="anchor7"></div>
         <div class="anchor" id="anchor8"></div>
         <div class="anchor" id="anchor9"></div>
-
         <section class="grid">
             <div class="card num-1" id="card1">
                 <a href="#anchor1" class="card-focus"></a>
                 <a href="#anchor2" class="next-btn">Next</a>
+                <label for="menuAnchor" class="menu-close-mask"></label>
+                <label for="menuAnchor" class="menu-btn">☰</label>
             </div>
             <div class="card num-2" id="card2">
                 <a href="#anchor2" class="card-focus"></a>
                 <a href="#anchor3" class="next-btn">Next</a>
+                <label for="menuAnchor" class="menu-close-mask"></label>
+                <label for="menuAnchor" class="menu-btn">☰</label>
             </div>
             <div class="card num-3" id="card3">
                 <a href="#anchor3" class="card-focus"></a>
                 <a href="#anchor4" class="next-btn">Next</a>
+                <label for="menuAnchor" class="menu-close-mask"></label>
+                <label for="menuAnchor" class="menu-btn">☰</label>
             </div>
             <div class="card num-4" id="card4">
                 <a href="#anchor4" class="card-focus"></a>
                 <a href="#anchor5" class="next-btn">Next</a>
+                <label for="menuAnchor" class="menu-close-mask"></label>
+                <label for="menuAnchor" class="menu-btn">☰</label>
             </div>
             <div class="card num-5" id="card5">
                 <a href="#anchor5" class="card-focus"></a>
                 <a href="#anchor6" class="next-btn">Next</a>
+                <label for="menuAnchor" class="menu-close-mask"></label>
+                <label for="menuAnchor" class="menu-btn">☰</label>
             </div>
             <div class="card num-6" id="card6">
                 <a href="#anchor6" class="card-focus"></a>
                 <a href="#anchor7" class="next-btn">Next</a>
+                <label for="menuAnchor" class="menu-close-mask"></label>
+                <label for="menuAnchor" class="menu-btn">☰</label>
             </div>
             <div class="card num-7" id="card7">
                 <a href="#anchor7" class="card-focus"></a>
                 <a href="#anchor8" class="next-btn">Next</a>
+                <label for="menuAnchor" class="menu-close-mask"></label>
+                <label for="menuAnchor" class="menu-btn">☰</label>
             </div>
             <div class="card num-8" id="card8">
                 <a href="#anchor8" class="card-focus"></a>
                 <a href="#anchor9" class="next-btn">Next</a>
+                <label for="menuAnchor" class="menu-close-mask"></label>
+                <label for="menuAnchor" class="menu-btn">☰</label>
             </div>
             <div class="card num-9" id="card9">
                 <a href="#anchor9" class="card-focus"></a>
                 <a href="#anchor1" class="next-btn">Next</a>
+                <label for="menuAnchor" class="menu-close-mask"></label>
+                <label for="menuAnchor" class="menu-btn">☰</label>
             </div>
         </section>
     </div>
